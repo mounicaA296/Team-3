@@ -7,6 +7,9 @@ const { authenticate } = require('../middleware/auth');
 // Login route
 router.post('/login', AuthController.login);
 
+// Signup route
+router.post('/register', AuthController.register);
+
 // Verify token route
 router.get('/verify', authenticate, AuthController.verifyToken);
 

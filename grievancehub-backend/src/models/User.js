@@ -32,10 +32,10 @@ const UserSchema = new mongoose.Schema({
     },
 
     department_id: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Department',
-        required: true
-    },
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Department',
+    default: null
+},
 
     is_active: {
         type: Boolean,
